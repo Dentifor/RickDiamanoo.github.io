@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;title&gt;W3.CSS Template&lt;/title&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</p>
+<p class="p1">&lt;link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"&gt;</p>
+<p class="p1">&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"&gt;</p>
+<p class="p1">&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}</p>
+<p class="p1">body, html {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: #777;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>line-height: 1.8;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Create a Parallax Effect */</p>
+<p class="p1">.bgimg-1, .bgimg-2, .bgimg-3 {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-attachment: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-position: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-repeat: no-repeat;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-size: cover;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* First image (Logo. Full height) */</p>
+<p class="p1">.bgimg-1 {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-image: url('/w3images/parallax1.jpg');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>min-height: 100%;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Second image (Portfolio) */</p>
+<p class="p1">.bgimg-2 {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-image: url("/w3images/parallax2.jpg");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>min-height: 400px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Third image (Contact) */</p>
+<p class="p1">.bgimg-3 {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-image: url("/w3images/parallax3.jpg");</p>
+<p class="p1"><span class="Apple-converted-space">  </span>min-height: 400px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.w3-wide {letter-spacing: 10px;}</p>
+<p class="p1">.w3-hover-opacity {cursor: pointer;}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Turn off parallax scrolling for tablets and phones */</p>
+<p class="p1">@media only screen and (max-device-width: 1600px) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.bgimg-1, .bgimg-2, .bgimg-3 {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-attachment: scroll;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>min-height: 400px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Navbar (sit on top) --&gt;</p>
+<p class="p1">&lt;div class="w3-top"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="w3-bar" id="myNavbar"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;i class="fa fa-bars"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#home" class="w3-bar-item w3-button"&gt;HOME&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#about" class="w3-bar-item w3-button w3-hide-small"&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt; ABOUT&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"&gt;&lt;i class="fa fa-th"&gt;&lt;/i&gt; PORTFOLIO&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#contact" class="w3-bar-item w3-button w3-hide-small"&gt;&lt;i class="fa fa-envelope"&gt;&lt;/i&gt; CONTACT&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;i class="fa fa-search"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Navbar on small screens --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()"&gt;ABOUT&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"&gt;PORTFOLIO&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"&gt;CONTACT&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#" class="w3-bar-item w3-button"&gt;SEARCH&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- First Parallax Image with Logo Text --&gt;</p>
+<p class="p1">&lt;div class="bgimg-1 w3-display-container w3-opacity-min" id="home"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="w3-display-middle" style="white-space:nowrap;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"&gt;RICK &lt;span class="w3-hide-small"&gt;STEVEN&lt;/span&gt; DIAMANO&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- Container (About Section) --&gt;</p>
+<p class="p1">&lt;div class="w3-content w3-container w3-padding-64" id="about"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h3 class="w3-center"&gt;ABOUT ME&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="w3-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="w3-col m6 w3-center w3-padding-large"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;b&gt;&lt;i class="fa fa-user w3-margin-right"&gt;&lt;/i&gt;Rick Steven Diamano&lt;/b&gt;&lt;/p&gt;&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="images/354132501_652421973431358_1805246992217147639_n.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Hide this text on small devices --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="w3-col m6 w3-hide-small w3-padding-large"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;I am Rick Steven Diamano from Grade 8 - Newton, Dumaguete Regional Science High School. I was born in July 18, 2009, which identifies me as a cancer. I currently have a half-sister, a step-sister, and a step-brother in our family. As a teenager, I play guitar, a little basketball and volleyball, online shooter games, and I do so much more. But even with these hobbies, I would easily become bored because I tend to learn more hobbies which prevents me from continuing the ones that I am already trying to learn or master. But I am always open with new things, and maybe you (as a reader) should influence me some of the things that you like!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="w3-large w3-center w3-padding-16"&gt;Im really good at:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="w3-wide"&gt;&lt;i class="fa fa-camera"&gt;&lt;/i&gt;Math&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="w3-light-grey"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%"&gt;70%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="w3-wide"&gt;&lt;i class="fa fa-laptop"&gt;&lt;/i&gt;Guitar&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="w3-light-grey"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:40%"&gt;40%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="w3-wide"&gt;&lt;i class="fa fa-photo"&gt;&lt;/i&gt;Coding&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="w3-light-grey"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:15%"&gt;15%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="w3-wide"&gt;&lt;i class="fa fa-photo"&gt;&lt;/i&gt;Sleeping&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="w3-light-grey"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%"&gt;2000%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="w3-wide"&gt;&lt;i class="fa fa-photo"&gt;&lt;/i&gt;Introvert&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="w3-light-grey"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:50%"&gt;50%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="w3-wide"&gt;&lt;i class="fa fa-photo"&gt;&lt;/i&gt;Extrovert&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="w3-light-grey"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:50%"&gt;50%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;a href="https://www.facebook.com/profile.php?id=100005441896112"&gt;</p>
+<p class="p1">&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" border="0" width="100" height="100" alt="Facebook"&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;a href="https://www.tiktok.com/@retrixcs"&gt;</p>
+<p class="p1">&lt;img src="https://www.pngitem.com/pimgs/m/488-4889569_tiktok-tik-tok-logo-png-transparent-png.png" border="0" width="100" height="100" alt="Facebook"&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;a href="https://www.instagram.com/rickstevendiamano/"&gt;</p>
+<p class="p1">&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" border="0" width="100" height="100" alt="Facebook"&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
